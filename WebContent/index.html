@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Image Filters</title>
+<link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body>
+	<h1>Image Filters</h1>
+
+	<div>
+		<canvas id="can">
+        </canvas>
+
+		<p>
+			Upload Image: <input type="file" multiple="false" accept="image/*"
+				onchange="upload()" id="upl">
+		</p>
+
+		<h1>Choose Effect:</h1>
+
+		<table>
+			<tr>
+				<td><input type="button" value="Red" onclick="red()" id="red"></td>
+				<td><input type="button" value="Greyscale"
+					onclick="greyscale()" id="grey"></td>
+				<td><input type="button" value="Rainbow" onclick="rainbow()"
+					id="rainbow"></td>
+				<td><input type="button" value="Window" onclick="mado()"
+					id="window"></td>
+			</tr>
+		</table>
+
+		<p>
+			<input type="button" value="Reset Image" onclick="reset()">
+		</p>
+	</div>
+
+	<script type="text/javascript" src="JavaScript.js"></script>
+	<script type="text/javascript" src="SimpleImage.js"></script>
+
+</body>
+</html>
